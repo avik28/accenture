@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retail Automation Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #3f51b5;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .card button {
+      padding: 0.5rem 1rem;
+      background-color: #3f51b5;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background-color: #303f9f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Retail Automation Dashboard</h1>
+  </header>
+  <div class="container">
+    <div class="card">
+      <h2>Demand Forecasting</h2>
+      <button onclick="alert('We are collecting historical sales data and applying ML-based forecasting algorithms to predict demand for the next period, helping in inventory planning and purchase decisions.')">Get Forecast</button>
+    </div>
+    <div class="card">
+      <h2>Inventory Monitoring</h2>
+      <button onclick="alert('We are continuously tracking real-time inventory levels across different categories and notifying low-stock or overstock alerts to optimize stock flow and warehouse utilization.')">Check Inventory</button>
+    </div>
+    <div class="card">
+      <h2>Pricing Optimization</h2>
+      <button onclick="alert('We are analyzing customer purchase behavior, competitor pricing, and demand elasticity to dynamically adjust product pricing for maximizing revenue and competitiveness.')">Optimize Price</button>
+    </div>
+    <div class="card">
+      <h2>Sustainability Monitor</h2>
+      <button onclick="alert('We are assessing energy usage, packaging waste, and supply chain sustainability metrics to offer insights and practices that reduce the retail carbon footprint.')">Check Impact</button>
+    </div>
+    <div class="card">
+      <h2>Operations Assistant</h2>
+      <button onclick="alert('We are assisting staff by providing instant access to restock info, supplier contact, and task reminders via a natural language interface.')">Query Assistant</button>
+    </div>
+    <div class="card">
+      <h2>Promotion Strategist</h2>
+      <button onclick="alert('We are analyzing sales trends, seasonal patterns, and target audiences to design discount strategies and campaigns that boost customer engagement.')">Generate Promotions</button>
+    </div>
+    <div class="card">
+      <h2>Customer & Layout Planner</h2>
+      <button onclick="alert('We are gathering customer behavior insights from interactions and optimizing shelf arrangements, in-store navigation, and product visibility to maximize engagement and sales.')">Plan Layout</button>
+    </div>
+  </div>
+</body>
+</html>
